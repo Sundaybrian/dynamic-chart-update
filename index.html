@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>World population</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1>World population over time</h1>
-      <h2>Number of people (in millions) living on earth, the last 500 years</h2>
+
+<head>
+  <title>World population</title>
 
 
-    </div>
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+  <div class="wrapper">
+    <h1>World population over time</h1>
+    <h2>Number of people (in millions) living on earth, the last 500 years</h2>
+
+  </div>
+
+
+<div class="chartt">
+  <canvas id="chart2" width="100px" height="100px"></canvas>
+</div>
+
+<div class="chartt">
+  <canvas id="chart2" width="100px" height="100px"></canvas>
+</div>
+
+<div class="chartt">
+  <canvas id="chart2" width="100px" height="100px"></canvas>
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBsnXYh1eftodsJs3PvdO1t_t9d2KjEbqo",
+    authDomain: "fir-weblearn-b660f.firebaseapp.com",
+    databaseURL: "https://fir-weblearn-b660f.firebaseio.com",
+    projectId: "fir-weblearn-b660f",
+    storageBucket: "fir-weblearn-b660f.appspot.com",
+    messagingSenderId: "654263767848"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript" src="jquery-3.2.1.js"></script>
+<script type="text/javascript" src="Chart.bundle.min.js"></script>
+<script type="text/javascript" src="utils.js"></script>
+<!-- // <script type="text/javascript" src="scriptsmidbase.js"></script> -->
+<script src="script.js"></script>
+</body>
+
 </html>
