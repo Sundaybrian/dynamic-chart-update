@@ -19,7 +19,16 @@ options: {
 }
 };
 
-// add function to update the chart values
+
+var rootRef2 = firebase.database().ref().child("HistoryChart");
+// console.log(rootRef2);
+
+// confirming the i am receiving the right object
+rootRef2.on('value', function(snap) {
+  console.log(snap.val(), "snap history");
+});
+
+// add() function to update the chart values
 function addData() {
 
 var chartArray = [];//empty array to store the data from firebase
@@ -42,24 +51,16 @@ var key;
 
     document.myDoughnut.update();//updating the doughnut
   });
-  //onchild added
+  //onchild added end
 }
-// add function
+// add() function
 
 
-
-var rootRef2 = firebase.database().ref().child("HistoryChart");
-// console.log(rootRef2);
-
-rootRef2.on('value', function(snap) {
-  console.log(snap.val(), "snap singles");
-
-});
 
 
 $(document).ready(function(){
 
-var ctx2 = document.getElementById("chart2").getContext('2d');
+var ctx2 = document.getElementById("chart2");
 document.myDoughnut = new Chart(ctx2, configg);
 addData();
 

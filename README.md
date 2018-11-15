@@ -1,32 +1,48 @@
-Dynamic Chart Update
-15-11-2018
-By Sunday Brian
-Description
+# Dynamic Chart Updater...(for a lack of a better name)
 
-Ping pong is a simple up-counter game.It prints up ping when numbers are divisible by 3;pong when numbers are divisible by 5 and ping-pong when numbers are divisible by both 3 and 5.
-Setup/Installation Requirements
+#### 15-11-2018
 
-    Clone repo
-    Open index.html
-    Play
-    Enjoy
+#### By Sunday Brian
 
-Technologies Used
+## Description
 
-Written in HTML.Styled with CSS and Bootstrap.Scripted in Javascript and Jquery frameworks.
-Behaviour Driven Development(BDD)
-Specifications
+Dynamic chart updater is a simple way to add data to the doughnut chart via firebase database
 
-    It can count to a specified number
-    It can detect if a number is divisible by 3
-    It can detect if a number is divisible by 5
-    It can detect if a number is divisible by both 3 and 5
+## Setup/Installation Requirements
+* Create a firebase database
+* Create a data tree e.g
+* Link firebase to you HTML/js
 
-Support and contact details
+<script src=""></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
+  };
+  firebase.initializeApp(config);
+</script>
+
+* Clone repo
+* Experiment
+* Enjoy
+
+
+## Technologies Used
+
+Written in HTML.Styled a bit with CSS.Scripted in Javascript and Jquery
+
+
+## Support and contact details
 
 If you run into any issues or have questions, ideas or concerns.Feel free to contact me at brians931@gmail.com
-License
 
-MIT
+### License
 
-Copyright (c) 2017
+*MIT*
+
+Copyright (c) 2018
