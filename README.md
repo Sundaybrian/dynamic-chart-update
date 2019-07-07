@@ -12,7 +12,7 @@ Dynamic chart updater is a simple way to add data to the doughnut chart via fire
 * Create a firebase database
 * Create a data tree e.g
 * Link firebase to you HTML/js
-
+```javascript
 <script src=""></script>
 <script>
   // Initialize Firebase
@@ -26,6 +26,7 @@ Dynamic chart updater is a simple way to add data to the doughnut chart via fire
   };
   firebase.initializeApp(config);
 </script>
+```
 
 * Clone repo
 * Experiment
